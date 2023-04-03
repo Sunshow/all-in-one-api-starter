@@ -1,0 +1,58 @@
+[versions]
+org-jetbrains-kotlin = "1.7.10"
+org-jetbrains-kotlinx = "1.6.4"
+nxcloud-foundation-core = "0.3.5"
+nxcloud-ext-springmvc-automapping = "0.3.6"
+net-sunshow-toolkit = "1.3.4"
+org-springframework-boot = "2.7.6"
+com-palantir-docker = "0.34.0"
+io-freefair-lombok = "6.6.1"
+io-spring-dependency-management = "1.1.0"
+kotlin-logging-jvm = "2.1.23"
+com-google-guava = "31.1-jre"
+org-bouncycastle = "1.69"
+commons-beanutils = "1.9.4"
+commons-io = "2.11.0"
+com-github-houbb-pinyin = "0.3.1"
+io-hypersistence = "3.2.0"
+com-thoughtworks-qdox = "2.0.3"
+com-squareup-javapoet = "1.13.0"
+com-squareup-kotlinpoet = "1.11.0"
+org-modelmapper = "3.1.1"
+
+[libraries]
+kotlinx-coroutines-core-jvm = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm", version.ref = "org-jetbrains-kotlinx" }
+nxcloud-starter-jpa = { module = "net.sunshow.nxcloud:nxcloud-core-spring-boot-starter-data-jpa", version.ref = "nxcloud-foundation-core" }
+nxcloud-core-base = { module = "net.sunshow.nxcloud:nxcloud-core-base", version.ref = "nxcloud-foundation-core" }
+nxcloud-core-validation = { module = "net.sunshow.nxcloud:nxcloud-core-validation", version.ref = "nxcloud-foundation-core" }
+nxcloud-springmvc-automapping = { module = "net.sunshow.nxcloud:nxcloud-springmvc-automapping", version.ref = "nxcloud-ext-springmvc-automapping" }
+nxcloud-ext-starter-springmvc-automapping = { module = "net.sunshow.nxcloud:nxcloud-ext-spring-boot-starter-springmvc-automapping", version.ref = "nxcloud-ext-springmvc-automapping" }
+kotlin-logging-jvm = { module = "io.github.microutils:kotlin-logging-jvm", version.ref = "kotlin-logging-jvm" }
+toolkit-core-base-enums = { module = "net.sunshow.toolkit:core-base-enums", version.ref = "net-sunshow-toolkit" }
+toolkit-core-base-enums-converter = { module = "net.sunshow.toolkit:core-base-enums-converter", version.ref = "net-sunshow-toolkit" }
+toolkit-core-qbean-api = { module = "net.sunshow.toolkit:core-qbean-api", version.ref = "net-sunshow-toolkit" }
+toolkit-core-qbean-processor = { module = "net.sunshow.toolkit:core-qbean-processor", version.ref = "net-sunshow-toolkit" }
+toolkit-core-qbean-helper = { module = "net.sunshow.toolkit:core-qbean-helper", version.ref = "net-sunshow-toolkit" }
+guava = { module = "com.google.guava:guava", version.ref = "com-google-guava" }
+bouncycastle-bcprov = { module = "org.bouncycastle:bcprov-jdk15to18", version.ref = "org-bouncycastle" }
+commons-beanutils = { module = "commons-beanutils:commons-beanutils", version.ref = "commons-beanutils" }
+commons-io = { module = "commons-io:commons-io", version.ref = "commons-io" }
+huoboo-pinyin = { module = "com.github.houbb:pinyin", version.ref = "com-github-houbb-pinyin" }
+hypersistence-utils-hibernate55 = { module = "io.hypersistence:hypersistence-utils-hibernate-55", version.ref = "io-hypersistence" }
+qdox = { module = "com.thoughtworks.qdox:qdox", version.ref = "com-thoughtworks-qdox" }
+javapoet = { module = "com.squareup:javapoet", version.ref = "com-squareup-javapoet" }
+kotlinpoet = { module = "com.squareup:kotlinpoet", version.ref = "com-squareup-kotlinpoet" }
+kotlinpoet-javapoet = { module = "com.squareup:kotlinpoet-javapoet", version.ref = "com-squareup-kotlinpoet" }
+modelmapper = { module = "org.modelmapper:modelmapper", version.ref = "org-modelmapper" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin" }
+kotlin-allopen = { id = "org.jetbrains.kotlin.plugin.allopen", version.ref = "org-jetbrains-kotlin" }
+kotlin-noarg = { id = "org.jetbrains.kotlin.plugin.noarg", version.ref = "org-jetbrains-kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "org-jetbrains-kotlin" }
+kotlin-jpa = { id = "org.jetbrains.kotlin.plugin.jpa", version.ref = "org-jetbrains-kotlin" }
+kotlin-lombok = { id = "org.jetbrains.kotlin.plugin.lombok", version.ref = "org-jetbrains-kotlin" }
+springboot = { id = "org.springframework.boot", version.ref = "org-springframework-boot" }
+docker = { id = "com.palantir.docker", version.ref = "com-palantir-docker" }
+freefair-lombok = { id = "io.freefair.lombok", version.ref = "io-freefair-lombok" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "io-spring-dependency-management" }
