@@ -1,0 +1,2 @@
+com.example.api.provider.autoconfigure.CommonProviderAutoConfiguration
+com.example.api.provider.autoconfigure.JpaProviderAutoConfiguration

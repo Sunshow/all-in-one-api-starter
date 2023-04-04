@@ -8,7 +8,7 @@ import org.gradle.kotlin.dsl.configure
 apply<GeneratorPlugin>()
 
 configure<GenerateConfigPluginExtension> {
-    basePackage.set("cn.turboinfo.solarkorb.api")
+    basePackage.set("com.example.api")
     // pojo 和 service 生成的所属大模块, 例如: common, admin, front
     basePartition.set("admin")
     pojoName.set("Role")

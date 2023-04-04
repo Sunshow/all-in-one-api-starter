@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: fy-api-gateway
+  data:
+    redis:
+      repositories:
+        enabled: false
+  messages:
+    encoding: UTF-8
+  jpa:
+    open-in-view: false
+    show-sql: false
+    properties:
+      hibernate:
+        generate_statistics: false
+        jdbc:
+          batch_size: 100
+          batch_versioned_data: true
+        order_inserts: true
+        order_updates: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  profiles:
+    active: local
+    include: common
+  main:
+    allow-circular-references: true
+logging:
+  level:
+    root: info
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+    context-path: /api
+  error:
+    path: /error
+deploy:

@@ -10,7 +10,7 @@ plugins {
     alias(libs.plugins.springboot) apply false
     alias(libs.plugins.kotlin.lombok) apply false
     alias(libs.plugins.freefair.lombok) apply false
-    cn.turboinfo.gradle.plugin.generator
+    com.example.gradle.plugin.generator
 }
 
 allprojects {

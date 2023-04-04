@@ -13,7 +13,7 @@ import java.io.FileReader
 
 class GeneratorPlugin : Plugin<Project> {
 
-    private val prefix = "turboInfo"
+    private val prefix = "example"
 
     private lateinit var config: GenerateConfig
 

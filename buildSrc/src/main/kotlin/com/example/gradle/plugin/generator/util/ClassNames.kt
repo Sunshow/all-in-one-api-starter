@@ -5,21 +5,21 @@ import com.squareup.javapoet.ClassName
 object ClassNames {
 
     // Custom Base
-    val QEntity: ClassName = ClassName.get("cn.turboinfo.solarkorb.api.provider.common.repository.database", "QEntity")
+    val QEntity: ClassName = ClassName.get("com.example.api.provider.jpa.repository.database", "QEntity")
     val SoftDeleteQEntity: ClassName =
-        ClassName.get("cn.turboinfo.solarkorb.api.provider.common.repository.database", "SoftDeleteQEntity")
+        ClassName.get("com.example.api.provider.jpa.repository.database", "SoftDeleteQEntity")
     val QRepository: ClassName =
-        ClassName.get("cn.turboinfo.solarkorb.api.provider.common.repository.database", "QRepository")
+        ClassName.get("com.example.api.provider.jpa.repository.database", "QRepository")
     val AbstractUseCase: ClassName =
-        ClassName.get("cn.turboinfo.solarkorb.api.domain.common.usecase", "AbstractUseCase")
+        ClassName.get("com.example.api.domain.common.usecase", "AbstractUseCase")
     val AbstractUseCaseOutputData: ClassName = AbstractUseCase.nestedClass("OutputData")
     val AbstractUseCaseInputData: ClassName = AbstractUseCase.nestedClass("InputData")
 
     // Admin
     val AdminSessionScope: ClassName =
-        ClassName.get("cn.turboinfo.solarkorb.api.gateway.admin.framework.http.annotation", "AdminSessionScope")
+        ClassName.get("com.example.api.gateway.admin.framework.http.annotation", "AdminSessionScope")
     val AdminPermissionScope: ClassName =
-        ClassName.get("cn.turboinfo.solarkorb.api.gateway.admin.framework.http.annotation", "AdminPermissionScope")
+        ClassName.get("com.example.api.gateway.admin.framework.http.annotation", "AdminPermissionScope")
 
     // Toolkit
     val BaseQService: ClassName = ClassName.get("net.sunshow.toolkit.core.qbean.api.service", "BaseQService")
